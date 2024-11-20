@@ -1,13 +1,11 @@
-/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fff; /* Main background white */
+  background-color: #fff;
 }
 
-/* Header Styles */
 header {
   color: white;
   padding: 10px 20px;
@@ -30,7 +28,7 @@ header {
 }
 
 .nav-link {
-  color: #000; /* Set links color to black */
+  color: #000;
   text-decoration: none;
   font-size: 1em;
 }
@@ -39,7 +37,6 @@ header {
   text-decoration: underline;
 }
 
-/* Hero Section */
 #hero {
   text-align: center;
 }
@@ -54,9 +51,8 @@ header {
   margin-top: 10px;
 }
 
-/* Form Section */
 #form-section {
-  padding: 30px; /* Reduced padding */
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,18 +60,18 @@ header {
 
 #form-section form {
   display: flex;
-  flex-direction: row; /* Align items horizontally */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Vertically align items */
-  width: 60%; /* Adjusted width to fit both inputs */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
 }
 
 #form-section input {
   padding: 10px;
-  margin-right: 10px; /* Space between the email input and submit button */
-  border: 1px solid #ccc; /* Border around the email input */
+  margin-right: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  width: 80%; /* Reduced width to make room for the button */
+  width: 80%;
 }
 
 #form-section input[type="submit"] {
@@ -85,26 +81,25 @@ header {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 20%; /* Button width */
+  width: 20%;
 }
 
 #form-section input[type="submit"]:hover {
   background-color: #555;
 }
 
-/* Video Section */
 #video-section {
   padding: 50px;
   display: flex;
-  justify-content: center; /* Center the video */
+  justify-content: center;
 }
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  width: 60%; /* Adjust width */
+  width: 60%;
 }
 
 .video-container iframe {
@@ -115,30 +110,29 @@ header {
   height: 100%;
 }
 
-/* Features Section */
 #Features-section {
   padding: 50px;
   text-align: center;
-  width: 60%; /* Set the width to match the video section */
-  margin: 0 auto; /* Center the section horizontally */
+  width: 60%;
+  margin: 0 auto;
 }
 
 .feature-grid {
   display: flex;
-  justify-content: space-around; /* Keep the space-around layout */
-  gap: 10px; /* Adjust the gap to fit within 60% width */
+  justify-content: space-around;
+  gap: 10px;
   flex-wrap: wrap;
   margin-top: 30px;
 }
 
 .feature {
-  background: #f4f4f4; /* Off-white background */
+  background: #f4f4f4;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   text-align: center;
-  width: 300px; /* Fixed width for the feature cards */
-  min-width: 20px; /* Ensure the cards don't get too small */
+  width: 300px;
+  min-width: 20px;
 }
 
 .feature i {
@@ -157,7 +151,6 @@ header {
   font-size: 1rem;
 }
 
-/* Footer Styles */
 footer {
   background-color: #333;
   color: #fff;
@@ -168,10 +161,9 @@ footer {
   z-index: 1000;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 480px) {
   #form-section form {
-    width: 90%; /* Increase width for small screens */
+    width: 90%;
   }
 
   .feature-grid {
@@ -181,7 +173,6 @@ footer {
   }
 }
 
-/* Pricing Section */
 .pricing-section {
   padding: 50px;
   text-align: center;
@@ -203,8 +194,8 @@ footer {
 }
 
 .pricing-plan {
-  background: #f4f4f4; /* Off-white background to match feature cards */
-  border: 1px solid #ddd; /* Similar border style */
+  background: #f4f4f4;
+  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   text-align: center;
