@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://brandeps.com/icon-download/S/Sith-icon-vector-01.svg"
+        alt="Logo"
+      />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#hero">Features</a>
+        <a class="nav-link" href="#video-section">How It Works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div>
+          <h1 class="hero-title">Transform Your Workflow with SuperProduct</h1>
+          <p class="hero-subtitle">
+            Streamline your processes, boost productivity, and unlock new levels
+            of efficiency.
+          </p>
+        </div>
+      </section>
+      <section id="form-section">
+        <form
+          id="form"
+          action="https://www.freecodecamp.com/email-submit"
+          method="post"
+        >
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </section>
+      <section id="video-section">
+        <div class="video-container">
+          <iframe
+            id="video"
+            src="https://www.youtube.com/embed/amfWIRasxtI?si=bj5Bf0f2RHsoQl6H"
+            title="Product Video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section id="Features-section">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+          <div class="feature">
+            <i class="fas fa-check-circle"></i>
+            <h3>Seamless Integration</h3>
+            <p>Works with your existing tools</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>Easy Deployment</h3>
+            <p>Set up in minutes, not months</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-check-circle"></i>
+            <h3>Advanced Analytics</h3>
+            <p>Insights that drive decision-making</p>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="pricing-section">
+        <h2 class="pricing-title">Simple, Transparent Pricing</h2>
+        <div class="pricing-plans">
+          <div class="pricing-plan">
+            <h3 class="plan-title">Starter</h3>
+            <div class="plan-price">$9/mo</div>
+            <ul class="plan-features">
+              <li>Basic Features</li>
+              <li>Limited Support</li>
+              <li>1 User</li>
+            </ul>
+            <button class="choose-plan-btn">Choose Plan</button>
+          </div>
+          <div class="pricing-plan recommended">
+            <div class="recommended-badge">Most Popular</div>
+            <h3 class="plan-title">Pro</h3>
+            <div class="plan-price">$29/mo</div>
+            <ul class="plan-features">
+              <li>All Starter Features</li>
+              <li>Priority Support</li>
+              <li>5 Users</li>
+              <li>Advanced Analytics</li>
+            </ul>
+            <button class="choose-plan-btn">Choose Plan</button>
+          </div>
+          <div class="pricing-plan">
+            <h3 class="plan-title">Enterprise</h3>
+            <div class="plan-price">Custom</div>
+            <ul class="plan-features">
+              <li>Unlimited Users</li>
+              <li>Dedicated Support</li>
+              <li>Advanced Integrations</li>
+            </ul>
+            <button class="choose-plan-btn">Choose Plan</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>&copy; 2024 SuperProduct. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

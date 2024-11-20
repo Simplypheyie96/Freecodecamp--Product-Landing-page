@@ -1,0 +1,273 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff; /* Main background white */
+}
+
+/* Header Styles */
+header {
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding-bottom: 60px;
+}
+
+#header-img {
+  height: 50px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: #000; /* Set links color to black */
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/* Form Section */
+#form-section {
+  padding: 30px; /* Reduced padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-section form {
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Vertically align items */
+  width: 60%; /* Adjusted width to fit both inputs */
+}
+
+#form-section input {
+  padding: 10px;
+  margin-right: 10px; /* Space between the email input and submit button */
+  border: 1px solid #ccc; /* Border around the email input */
+  border-radius: 5px;
+  width: 80%; /* Reduced width to make room for the button */
+}
+
+#form-section input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%; /* Button width */
+}
+
+#form-section input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Video Section */
+#video-section {
+  padding: 50px;
+  display: flex;
+  justify-content: center; /* Center the video */
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  width: 60%; /* Adjust width */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Features Section */
+#Features-section {
+  padding: 50px;
+  text-align: center;
+  width: 60%; /* Set the width to match the video section */
+  margin: 0 auto; /* Center the section horizontally */
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-around; /* Keep the space-around layout */
+  gap: 10px; /* Adjust the gap to fit within 60% width */
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature {
+  background: #f4f4f4; /* Off-white background */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* Fixed width for the feature cards */
+  min-width: 20px; /* Ensure the cards don't get too small */
+}
+
+.feature i {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  #form-section form {
+    width: 90%; /* Increase width for small screens */
+  }
+
+  .feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+}
+
+/* Pricing Section */
+.pricing-section {
+  padding: 50px;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.pricing-plans {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.pricing-plan {
+  background: #f4f4f4; /* Off-white background to match feature cards */
+  border: 1px solid #ddd; /* Similar border style */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  min-width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-plan .recommended {
+  border: 2px solid #333;
+}
+
+.recommended-badge {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  margin-bottom: 15px;
+}
+
+.plan-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.plan-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.plan-features {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.plan-features li {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.choose-plan-btn {
+  background-color: #333;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.choose-plan-btn:hover {
+  background-color: #555;
+}
