@@ -25,7 +25,7 @@
     </header>
     <main>
       <section id="hero">
-        <div>
+        <div class="hero-content">
           <h1 class="hero-title">Transform Your Workflow with SuperProduct</h1>
           <p class="hero-subtitle">
             Streamline your processes, boost productivity, and unlock new levels
@@ -33,35 +33,8 @@
           </p>
         </div>
       </section>
-      <section id="form-section">
-        <form
-          id="form"
-          action="https://www.freecodecamp.com/email-submit"
-          method="post"
-        >
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="Enter your email"
-            required
-          />
-          <input id="submit" type="submit" value="Submit" />
-        </form>
-      </section>
-      <section id="video-section">
-        <div class="video-container">
-          <iframe
-            id="video"
-            src="https://www.youtube.com/embed/amfWIRasxtI?si=bj5Bf0f2RHsoQl6H"
-            title="Product Video"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-      <section id="Features-section">
-        <h2>Key Features</h2>
+      <section id="features" class="features-section">
+        <h2 class="section-title">Key Features</h2>
         <div class="feature-grid">
           <div class="feature">
             <i class="fas fa-check-circle"></i>
@@ -79,6 +52,37 @@
             <p>Insights that drive decision-making</p>
           </div>
         </div>
+      </section>
+      <section id="video-section" class="video-section">
+        <div class="video-container">
+          <div class="video-loader">
+            <div class="spinner"></div>
+            <p>Loading video...</p>
+          </div>
+          <iframe
+            id="video"
+            src="https://www.youtube.com/embed/amfWIRasxtI?si=bj5Bf0f2RHsoQl6H&autoplay=1&mute=1&loop=1"
+            title="Product Video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section id="form-section" class="form-section">
+        <form
+          id="form"
+          action="https://www.freecodecamp.com/email-submit"
+          method="post"
+        >
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input id="submit" type="submit" value="Submit" />
+        </form>
       </section>
       <section id="pricing" class="pricing-section">
         <h2 class="pricing-title">Simple, Transparent Pricing</h2>
@@ -121,5 +125,6 @@
     <footer id="footer">
       <p>&copy; 2024 SuperProduct. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
