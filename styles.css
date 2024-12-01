@@ -375,3 +375,148 @@ footer {
 .choose-plan-btn:hover {
   background-color: #555;
 }
+
+/* Mobile-first media queries */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  header {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  #nav-bar {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* Hero section */
+  .hero-title {
+    font-size: 2em;
+    padding: 0 15px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2em;
+    padding: 0 15px;
+  }
+
+  /* Form section */
+  #form-section form {
+    width: 95%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #form-section input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #form-section input[type="submit"] {
+    width: 100%;
+  }
+
+  /* Features section */
+  #features {
+    width: 95%;
+    padding: 30px 15px;
+  }
+
+  .feature-grid {
+    gap: 20px;
+  }
+
+  .feature {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* Video section */
+  .video-section {
+    padding: 30px 15px;
+  }
+
+  .video-container {
+    width: 100%;
+  }
+
+  /* Pricing section */
+  .pricing-section {
+    width: 95%;
+    padding: 30px 15px;
+  }
+
+  .pricing-title {
+    font-size: 2em;
+  }
+
+  .pricing-plans {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .pricing-plan {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* General section titles */
+  .section-title {
+    font-size: 2em;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #features,
+  .pricing-section {
+    width: 90%;
+  }
+
+  .pricing-plans {
+    gap: 15px;
+  }
+
+  .pricing-plan {
+    min-width: 220px;
+  }
+
+  .feature-grid {
+    gap: 15px;
+  }
+
+  .feature {
+    width: calc(50% - 15px);
+  }
+}
+
+/* Additional responsive improvements */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1em;
+  }
+
+  .plan-features {
+    padding: 0 10px;
+  }
+
+  .plan-price {
+    font-size: 2rem;
+  }
+
+  .feature i {
+    font-size: 1.5rem;
+  }
+
+  .feature h3 {
+    font-size: 1.2rem;
+  }
+}
